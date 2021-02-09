@@ -51,7 +51,7 @@ class MiningBlockHeader(rlp.Serializable):
         #('nonce', Binary(8, allow_empty=True)
     ]
 
-provider = Web3.IPCProvider('/home/chronic/TMP_Stuff/geth.ipc')
+provider = Web3.IPCProvider('/home/ubuntu/.ethereum/geth.ipc')
 w3 = Web3(provider)
 print(w3.isConnected())
 
